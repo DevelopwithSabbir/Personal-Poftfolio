@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./styles/output.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white py-4 px-6 md:px-8">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-yellow-400">Develop with Sabbir<span class="text-white">.</span></a>
+      
+      <!-- Hamburger Icon -->
+      <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      
+      <!-- Navigation Items -->
+      <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">
+        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+        <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden flex-col space-y-4 mt-4 md:hidden bg-gray-800 text-sm font-medium p-4 rounded-lg">
+      <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+      <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+      <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col-reverse md:flex-row items-center justify-between py-20 px-8 max-w-7xl mx-auto">
+    <!-- Left Content -->
+    <div class="space-y-6 text-center md:text-left md:w-1/2">
+      <p class="text-yellow-400 text-lg font-medium">Hello, Welcome</p>
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-snug">
+        I’m <span class="text-yellow-400">Md Sabbir Hossen</span>
+      </h1>
+      <p class="text-gray-400 text-lg">
+        I am a professional web developer specializing in modern, responsive, and user-friendly websites. Let me bring your ideas to life with clean design and efficient code.
+      </p>
+      <a href="#contact" class="bg-yellow-500 text-gray-900 px-6 py-3 rounded font-semibold hover:bg-yellow-600 transition duration-300 mt-6 inline-block">
+        Contact Me
+      </a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="relative md:w-1/2">
+      <div class="absolute bg-yellow-500 rounded-full w-70 h-70 md:w-96 md:h-96 -z-10 blur-xl opacity-30"></div>
+      <img src="/my-portfolio/WhatsApp Image 2024-12-04 at 01.42.19_91cb835a.jpg" alt="Profile" class="rounded-lg shadow-lg w-72 h-100 md:w-96 md:h-110">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-8 bg-gray-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between md:gap-12">
+      <!-- Image -->
+      <div class="relative md:w-1/2 mb-10 md:mb-0">
+        <img src="/my-portfolio/WhatsApp Image 2024-12-04 at 01.42.19_91cb835a.jpg" alt="About Me" class="rounded-lg shadow-lg">
+      </div>
+      <!-- Text Content -->
+      <div class="md:w-1/2 space-y-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold">
+          About <span class="text-yellow-400">Me</span>
+        </h2>
+        <p class="text-gray-400 text-lg">
+          I specialize in both frontend and backend development, delivering modern and seamless web experiences. Whether it’s creating pixel-perfect UI or building secure backend systems, I ensure excellence in every project.
+        </p>
+        <a href="#contact" class="bg-yellow-500 text-gray-900 px-6 py-3 rounded font-semibold hover:bg-yellow-600 transition duration-300 mt-6 inline-block">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 px-8 bg-gray-900">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-12">
+        My <span class="text-yellow-400">Services</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Service Card -->
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold text-yellow-400">Frontend Development</h3>
+          <p class="text-gray-400 mt-4">Building responsive and visually stunning user interfaces with HTML, CSS, JavaScript, and React.js.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold text-yellow-400">Backend Development</h3>
+          <p class="text-gray-400 mt-4">Creating secure and scalable server-side systems with Node.js, Express, and database integrations.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold text-yellow-400">Full-Stack Development</h3>
+          <p class="text-gray-400 mt-4">Combining frontend and backend skills to deliver end-to-end solutions tailored to client needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- My Recent Work Section -->
+<section id="recent-work" class="py-20 px-8 bg-gray-900">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8">My Recent <span class="text-yellow-400">Work</span></h2>
+    <p class="text-gray-400 text-lg mb-12">Here are a few projects I’ve worked on. Want to see more? <a href="#contact" class="text-yellow-400 hover:underline">Email me</a>.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Project Card 1 -->
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-lg font-bold text-gray-400 uppercase mb-4">Project 1</h3>
+        <h4 class="text-2xl font-bold text-yellow-400">Edupro Tuition Media</h4>
+        <p class="text-gray-400 mt-4">This is a brief description of the project, highlighting its features and functionality.</p>
+        <a href="https://github.com/DevelopwithSabbir/Edupro-Tuition-Media.git" class="text-blue-400 hover:underline mt-4 inline-block font-semibold">Visit Website</a>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-lg font-bold text-gray-400 uppercase mb-4">Project 2</h3>
+        <h4 class="text-2xl font-bold text-yellow-400">Chirkut Me</h4>
+        <p class="text-gray-400 mt-4">This is a brief description of the project, highlighting its features and functionality.</p>
+        <a href="https://github.com/DevelopwithSabbir/chirkutme" class="text-blue-400 hover:underline mt-4 inline-block font-semibold">Visit Website</a>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-lg font-bold text-gray-400 uppercase mb-4">Project 3</h3>
+        <h4 class="text-2xl font-bold text-yellow-400">To Do List</h4>
+        <p class="text-gray-400 mt-4">This is a brief description of the project, highlighting its features and functionality.</p>
+        <a href="https://github.com/DevelopwithSabbir/Weater-App.git" class="text-blue-400 hover:underline mt-4 inline-block font-semibold">Visit Website</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 px-8 bg-gray-900 text-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Testimonials</h2>
+    <p class="text-gray-400 text-lg mb-12">What my clients and colleagues say about working with me.</p>
+
+    <!-- Testimonial Card -->
+    <div class="bg-gray-800 rounded shadow-lg p-8">
+      <!-- Profile Image -->
+      <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6">
+        <img src="/image.png" alt="Testimonial Person">
+      </div>
+      <!-- Quote -->
+      <p class="text-lg text-gray-300 italic mb-6">
+        “Working with Sabbir was an absolute pleasure. He is professional, detail-oriented, and delivers exceptional results. I highly recommend him for any web development project.”
+      </p>
+      <!-- Person Info -->
+      <h4 class="text-xl font-bold text-yellow-400">Ali Roah</h4>
+      <p class="text-gray-400">Project Manager, Chirkut Me</p>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="flex justify-center items-center space-x-2 mt-8">
+      <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+      <span class="w-3 h-3 bg-gray-500 rounded-full"></span>
+      <span class="w-3 h-3 bg-gray-500 rounded-full"></span>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-8 bg-gray-800">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-8">
+        Get in <span class="text-yellow-400">Touch</span>
+      </h2>
+      <p class="text-gray-400 text-lg mb-8">
+        Reach out for collaborations or just to say hi!
+      </p>
+      <a href="mdsabbirhossen251920@gmail.com" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded font-semibold hover:bg-yellow-600 transition duration-300">
+        Email Me
+      </a>
+    </div>
+  </section>
+
+
+
+
+  <section id="contact" class="py-20 px-8 bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    <!-- Contact Info -->
+    <div>
+      <h2 class="text-4xl font-extrabold mb-4">Contact <span class="text-yellow-400">Me</span></h2>
+      <p class="text-gray-400 text-lg mb-8">
+        I’d love to hear from you! Whether you have a question or just want to say hi, feel free to reach out.
+      </p>
+      <ul class="space-y-6">
+        <li>
+          <span class="font-bold text-yellow-400">Address:</span>
+          <p class="text-gray-400">Shahbagh Road, Dr. Muhammad Shahidullah Hall, University of Dhaka, Dhaka , Bangladesh</p>
+        </li>
+        <li>
+          <span class="font-bold text-yellow-400">Phone:</span>
+          <p class="text-gray-400">+8801705951337</p>
+        </li>
+        <li>
+          <span class="font-bold text-yellow-400">Email:</span>
+          <p class="text-gray-400">mdsabbirhossen251920@gmail.com</p>
+        </li>
+        <li>
+          <span class="font-bold text-yellow-400">Website:</span>
+          <p class="text-gray-400">www.abc.xyz.com</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div>
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label for="name" class="sr-only">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            class="w-full p-4 bg-gray-800 rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+        <div>
+          <label for="email" class="sr-only">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            class="w-full p-4 bg-gray-800 rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+        <div>
+          <label for="message" class="sr-only">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            class="w-full p-4 bg-gray-800 rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition duration-300 w-full md:w-auto"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Start a Project Section -->
+<section id="start-project" class="bg-gray-900 text-white py-12">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-8">
+    <!-- Title and Description -->
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl font-extrabold">Start a project</h2>
+      <p class="text-gray-400 text-lg mt-4">
+        Have a great idea? Let's build it together! Whether it's frontend, backend, or full-stack development, I'm here to bring your vision to life.
+      </p>
+    </div>
+    <!-- Call-to-Action Button -->
+    <a
+      href="#contact"
+      class="mt-6 md:mt-0 bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300 inline-flex items-center"
+    >
+      <span>🚀 Let's get started</span>
+    </a>
+  </div>
+</section>
+
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="max-w-7xl mx-auto text-center">
+    
+    <p class="text-lg font-medium">
+      Building digital solutions from frontend to backend. Crafting robust, scalable, and user-friendly applications for a better tomorrow.
+    </p>
+    <!-- Social Links -->
+    <div class="flex justify-center items-center space-x-6 mt-6">
+      <a href="https://twitter.com" class="text-white hover:text-gray-300">
+        <i class="fab fa-twitter text-2xl"></i>
+      </a>
+      <a href="https://github.com/DevelopwithSabbir" class="text-white hover:text-gray-300">
+        <i class="fab fa-github text-2xl"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/md-sabbir-hossen-a27083322/" class="text-white hover:text-gray-300">
+        <i class="fab fa-linkedin text-2xl"></i>
+      </a>
+      <a href="mdsabbirhossen251920@gmail.com" class="text-white hover:text-gray-300">
+        <i class="fas fa-envelope text-2xl"></i>
+      </a>
+    </div>
+    <!-- Footer Text -->
+    <p class="text-sm text-gray-300 mt-6">
+      © 2025 <span class="font-bold">Your Name</span> - Full Stack Web Developer
+    </p>
+    <p class="text-sm text-gray-300">
+      Powered by <span class="text-blue-400">Code</span> and <span class="text-yellow-400">Creativity</span>.
+    </p>
+  </div>
+</footer>
+
+</body>
+
+</html>
